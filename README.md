@@ -101,8 +101,15 @@ Outputs a 1-vs-1 scatter plot and Wilcoxon signed-rank p-value.
 
 ## Citation
 
-If this code is useful for your research, please cite the underlying LITE
-paper and this repository.
+If you use this work please make sure you cite this paper:
+```bibtex
+@article{abdullayev2026adaptive,
+  title={Adaptive Structured Pruning of Convolutional Neural Networks for Time Series Classification},
+  author={Abdullayev, Javidan and Devanne, Maxime and Meyer, Cyril and Ismail-Fawaz, Ali and Weber, Jonathan and Forestier, Germain},
+  journal={arXiv preprint arXiv:2602.12744},
+  year={2026}
+}
+```
 
 ## License
 
