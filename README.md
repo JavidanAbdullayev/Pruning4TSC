@@ -1,7 +1,7 @@
 # Feature-Sparse Pruning for LITE / Inception Time-Series Classifiers
 
 PyTorch implementation of feature-sparsity-driven structured pruning for
-[LITE](https://arxiv.org/abs/2409.02869) and InceptionTime, evaluated on the
+[LITE](https://arxiv.org/abs/2409.02869) and InceptionTime(https://arxiv.org/abs/1909.04939), evaluated on the
 [UCR Time Series Archive](https://www.cs.ucr.edu/~eamonn/time_series_data_2018/).
 
 The pipeline has three stages:
