@@ -1,0 +1,12 @@
+# Base InceptionTime training. Reference: base_inception.py.
+
+name: base_inception
+model: inception
+n_filters: 32        # uniform per-branch filter count
+depth: 6
+
+epochs: 1500
+use_scheduler: true
+sparse_lambda: 0.0
+
+seeds: [9409, 3804, 3952, 2561, 5296]

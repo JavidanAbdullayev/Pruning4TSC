@@ -1,0 +1,18 @@
+# Filter-count ablation. To reproduce the 4 / 8 / 12 / 16 / 20 / 24 / 32-filter
+# variants, just change ``n_filters`` (and the run name) below.
+#
+# This single config replaces:
+#   base_models_4_filters.py, base_models_8_filters.py,
+#   base_models_12_filters.py, base_models_16_filters.py,
+#   base_models_20_filters.py, base_models_24_filters.py,
+#   base_models_32_filters.py.
+
+name: base_lite_8_filters
+model: lite
+n_filters: [[8, 8, 8], 8, 8]
+
+epochs: 1500
+use_scheduler: true
+sparse_lambda: 0.0
+
+seeds: [9409, 3804, 3952, 2561, 5296]

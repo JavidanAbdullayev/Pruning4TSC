@@ -1,0 +1,13 @@
+# Plain LITE baseline (no sparsity regularization).
+# Reference: base_lite.py / base_models_32_filters.py.
+
+name: base_lite
+model: lite
+n_filters: [[32, 32, 32], 32, 32]
+
+epochs: 1500
+use_scheduler: true
+
+sparse_lambda: 0.0  # disabled
+
+seeds: [9409, 3804, 3952, 2561, 5296]

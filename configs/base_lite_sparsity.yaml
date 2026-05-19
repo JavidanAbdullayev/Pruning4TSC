@@ -1,0 +1,21 @@
+# Base LITE training with instance-wise feature-sparsity regularization.
+# Reference: base_models_2e-5_weights_4_2_1.py (and the lambda/weight variants).
+
+name: base_lite_sparsity
+model: lite
+n_filters: [[32, 32, 32], 32, 32]
+
+epochs: 1500
+use_scheduler: true
+scheduler_patience: 50
+scheduler_factor: 0.5
+min_lr: 1.0e-4
+
+# Sparsity penalty. lambda * sum_i w_i * L21(feature_i)
+sparse_lambda: 2.0e-5
+sparse_weights: [4.0, 2.0, 1.0]
+# LITE's first inception layer mixes 96 learnable + 17 hand-crafted filters;
+# only the learnable ones should be penalized.
+inception_first_layer_filters: 96
+
+seeds: [9409, 3804, 3952, 2561, 5296]
